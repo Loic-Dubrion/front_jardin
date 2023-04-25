@@ -6,7 +6,7 @@ const logger = require('../../logger');
 
 /* eslint-disable react/prop-types */
 class DeleteButton extends Component {
-  handleClick = () => {
+  handleClick() {
     const { onDelete } = this.props;
 
     if (typeof onDelete === 'function') {
@@ -14,7 +14,7 @@ class DeleteButton extends Component {
     } else {
       logger.log('Bouton Supprimer cliqué');
     }
-  };
+  }
 
   render() {
     return (
