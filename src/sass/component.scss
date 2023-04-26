@@ -1,0 +1,31 @@
+/* ============================================= */
+//* Styles spécifiques à chaque composant React,  
+//* tels que les styles pour les boutons et les modales.
+/* ============================================= */
+
+// Styles pour le bouton de suppression
+.delete-button {
+  color: #fff;
+  background-color: $primary-color;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+// Styles pour la modale
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}

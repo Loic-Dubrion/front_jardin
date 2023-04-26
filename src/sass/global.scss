@@ -1,0 +1,41 @@
+/* ============================================= */
+//* Styles globaux, 
+//* tels que les balises HTML, les boutons et les formulaires.
+/* ============================================= */
+
+// Styles pour les balises HTML
+html {
+  font-size: 16px;
+}
+
+// Styles pour les boutons
+button {
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $primary-color;
+  }
+}
+
+// Styles pour les formulaires
+// input[type='text'],
+// input[type='email'],
+// input[type='password'] {
+//   border: 1px solid #ccc;
+//   border-radius: 0.25rem;
+//   padding: 0.5rem;
+//   width: 100%;
+
+//   &:focus {
+//     outline: none;
+//     box-shadow: 0 0 0 2px $primary-color;
+//   }
+// }

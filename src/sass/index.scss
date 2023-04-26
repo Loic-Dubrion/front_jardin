@@ -1,0 +1,31 @@
+/* ============================================= */
+//* import tous les autres fichiers SCSS
+//* définition des variables globales et des mixins
+/* ============================================= */
+
+// Import des fichiers CSS
+@import './global.scss';
+@import './component.scss';
+@import './layout.scss';
+
+// Variables globales
+$primary-color: #4285f4;
+$secondary-color: #34a853;
+
+// Mixins
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Styles généraux
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}

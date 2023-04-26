@@ -1,0 +1,38 @@
+/* ============================================= */
+//* Styles de mise en page pour votre application, 
+//* tels que les styles pour l'en-tête, le pied de page et la colonne latérale
+/* ============================================= */
+
+// Styles pour l'en-tête
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $primary-color;
+  color: #fff;
+  padding: 1rem;
+
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .nav {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
