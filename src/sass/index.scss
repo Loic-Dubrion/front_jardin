@@ -4,9 +4,9 @@
 /* ============================================= */
 
 // Import des fichiers CSS
-@import './global.scss';
-@import './component.scss';
-@import './layout.scss';
+@import 'layout';
+@import 'global';
+@import 'component';
 
 // Variables globales
 $primary-color: #4285f4;

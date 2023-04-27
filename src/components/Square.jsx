@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import Crop from './Crop';
+import DeleteButton from './buttons/DeleteButton';
 
 class Square extends Component {
   constructor(props) {
@@ -13,12 +14,16 @@ class Square extends Component {
   render() {
     return (
       <div className="square" id={`square-id-${this.id}`}>
-        <h2 className="square-title">{this.name}</h2>
+        <div>
+          <h2 className="square-title">{this.name}</h2>
+          <DeleteButton squareId={this.id} isSquare />
+        </div>
         {this.crops.map((crop) => (
           !crop.harvest && (
           <Crop
             key={crop.id}
             id={crop.id}
+            squareId={this.id}
             sowing={crop.sowing}
             planting={crop.planting}
             vegetable={crop.vegetable}
